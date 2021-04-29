@@ -1,6 +1,10 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
+
+from mandel_function import mandelbrot
+
+
 height=800
 width=1200
 iterations=100
@@ -12,17 +16,7 @@ im_1=1
 
 c=complex(0,1)
 
-def mandelbrot(c,iterations=100):
-    z=0
-    n=0
-    
-    
-    
-    while abs(z)<=2 and n< iterations:
-        z=z**2+c
-        n+=1
-        
-    return n
+
 
 import numpy as np
 img=np.zeros((width,height))
